@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" width="720" height="380" role="img" aria-label="Request latency vs. concurrency">
+
+<style>
+  .surface { fill: #fcfcfb; }
+  .ink-1 { fill: #0b0b0b; }
+  .ink-2 { fill: #52514e; }
+  .muted { fill: #898781; }
+  .grid { stroke: #e1e0d9; }
+  .axis { stroke: #c3c2b7; }
+  .ref { stroke: #898781; }
+  .s1 { stroke: #2a78d6; }
+  .s1-fill { fill: #2a78d6; }
+  .s2 { stroke: #eb6834; }
+  .s2-fill { fill: #eb6834; }
+  .ring { stroke: #fcfcfb; }
+  text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .tick { font-size: 12px; font-variant-numeric: tabular-nums; }
+  @media (prefers-color-scheme: dark) {
+    .surface { fill: #1a1a19; }
+    .ink-1 { fill: #f0efec; }
+    .ink-2 { fill: #c3c2b7; }
+    .grid { stroke: #2c2c2a; }
+    .axis { stroke: #383835; }
+    .s1 { stroke: #3987e5; }
+    .s1-fill { fill: #3987e5; }
+    .s2 { stroke: #d95926; }
+    .s2-fill { fill: #d95926; }
+    .ring { stroke: #1a1a19; }
+  }
+</style>
+
+<rect class="surface" width="720" height="380" rx="8"/>
+<text class="ink-1" x="64" y="28" font-size="16" font-weight="600">Request latency vs. concurrency</text>
+<text class="ink-2" x="64" y="48" font-size="13">End-to-end latency per request, 64 output tokens</text>
+<line class="s1" x1="64" y1="64" x2="84" y2="64" stroke-width="2"/>
+<text class="ink-2" x="90" y="68" font-size="12">p50</text>
+<line class="s2" x1="135" y1="64" x2="155" y2="64" stroke-width="2"/>
+<text class="ink-2" x="161" y="68" font-size="12">p95</text>
+<line class="axis" x1="64" y1="324.0" x2="544" y2="324.0" stroke-width="1"/>
+<text class="muted tick" x="54" y="328.0" text-anchor="end">0 ms</text>
+<line class="grid" x1="64" y1="262.0" x2="544" y2="262.0" stroke-width="1"/>
+<text class="muted tick" x="54" y="266.0" text-anchor="end">200 ms</text>
+<line class="grid" x1="64" y1="200.0" x2="544" y2="200.0" stroke-width="1"/>
+<text class="muted tick" x="54" y="204.0" text-anchor="end">400 ms</text>
+<line class="grid" x1="64" y1="138.0" x2="544" y2="138.0" stroke-width="1"/>
+<text class="muted tick" x="54" y="142.0" text-anchor="end">600 ms</text>
+<line class="grid" x1="64" y1="76.0" x2="544" y2="76.0" stroke-width="1"/>
+<text class="muted tick" x="54" y="80.0" text-anchor="end">800 ms</text>
+<text class="muted tick" x="64.0" y="344" text-anchor="middle">1</text>
+<text class="muted tick" x="184.0" y="344" text-anchor="middle">2</text>
+<text class="muted tick" x="304.0" y="344" text-anchor="middle">4</text>
+<text class="muted tick" x="424.0" y="344" text-anchor="middle">8</text>
+<text class="muted tick" x="544.0" y="344" text-anchor="middle">16</text>
+<text class="ink-2" x="304.0" y="368" font-size="12" text-anchor="middle">Concurrent requests</text>
+<polyline class="s1" points="64.0,185.4 184.0,187.3 304.0,185.4 424.0,180.5 544.0,178.6" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle class="s1-fill ring" cx="64.0" cy="185.4" r="5" stroke-width="2"/>
+<circle class="s1-fill ring" cx="184.0" cy="187.3" r="5" stroke-width="2"/>
+<circle class="s1-fill ring" cx="304.0" cy="185.4" r="5" stroke-width="2"/>
+<circle class="s1-fill ring" cx="424.0" cy="180.5" r="5" stroke-width="2"/>
+<circle class="s1-fill ring" cx="544.0" cy="178.6" r="5" stroke-width="2"/>
+<polyline class="s2" points="64.0,174.6 184.0,185.1 304.0,99.9 424.0,96.2 544.0,92.1" fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle class="s2-fill ring" cx="64.0" cy="174.6" r="5" stroke-width="2"/>
+<circle class="s2-fill ring" cx="184.0" cy="185.1" r="5" stroke-width="2"/>
+<circle class="s2-fill ring" cx="304.0" cy="99.9" r="5" stroke-width="2"/>
+<circle class="s2-fill ring" cx="424.0" cy="96.2" r="5" stroke-width="2"/>
+<circle class="s2-fill ring" cx="544.0" cy="92.1" r="5" stroke-width="2"/>
+<text class="ink-1" x="558.0" y="90.1" font-size="13" font-weight="600">p95 748 ms</text>
+<text class="ink-2" x="558.0" y="106.1" font-size="12">from 482 ms at 1</text>
+<text class="ink-1" x="558.0" y="176.6" font-size="13" font-weight="600">p50 469 ms</text>
+<text class="ink-2" x="558.0" y="192.6" font-size="12">from 447 ms at 1</text>
+</svg>

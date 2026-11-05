@@ -1,0 +1,65 @@
+{
+  "config": {
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "prompt": "Explain continuous batching in LLM serving.",
+    "num_requests": 32,
+    "max_tokens": 64
+  },
+  "results": [
+    {
+      "concurrency": 1,
+      "num_requests": 32,
+      "duration_s": 14.412,
+      "requests_per_second": 2.22,
+      "output_tokens_per_second": 142.11,
+      "latency_mean_s": 0.45,
+      "latency_p50_s": 0.447,
+      "latency_p95_s": 0.482,
+      "avg_output_tokens": 64.0
+    },
+    {
+      "concurrency": 2,
+      "num_requests": 32,
+      "duration_s": 7.323,
+      "requests_per_second": 4.37,
+      "output_tokens_per_second": 279.65,
+      "latency_mean_s": 0.45,
+      "latency_p50_s": 0.441,
+      "latency_p95_s": 0.448,
+      "avg_output_tokens": 64.0
+    },
+    {
+      "concurrency": 4,
+      "num_requests": 32,
+      "duration_s": 3.86,
+      "requests_per_second": 8.29,
+      "output_tokens_per_second": 530.59,
+      "latency_mean_s": 0.465,
+      "latency_p50_s": 0.447,
+      "latency_p95_s": 0.723,
+      "avg_output_tokens": 64.0
+    },
+    {
+      "concurrency": 8,
+      "num_requests": 32,
+      "duration_s": 2.129,
+      "requests_per_second": 15.027,
+      "output_tokens_per_second": 961.74,
+      "latency_mean_s": 0.494,
+      "latency_p50_s": 0.463,
+      "latency_p95_s": 0.735,
+      "avg_output_tokens": 64.0
+    },
+    {
+      "concurrency": 16,
+      "num_requests": 32,
+      "duration_s": 1.225,
+      "requests_per_second": 26.123,
+      "output_tokens_per_second": 1671.89,
+      "latency_mean_s": 0.538,
+      "latency_p50_s": 0.469,
+      "latency_p95_s": 0.748,
+      "avg_output_tokens": 64.0
+    }
+  ]
+}
