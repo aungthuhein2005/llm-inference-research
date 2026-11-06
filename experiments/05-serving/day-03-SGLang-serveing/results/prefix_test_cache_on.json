@@ -1,0 +1,50 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "summary": {
+    "mean_ttft_ms": 103.2,
+    "p95_ttft_ms": 326.6,
+    "output_tokens_per_second": 91.89,
+    "cached_prefix_tokens": 4155,
+    "prompt_tokens": 5555,
+    "gpu_memory_used_mib": 3831,
+    "gpu_memory_total_mib": 6141
+  },
+  "requests": [
+    {
+      "question": "What is continuous batching?",
+      "ttft_s": 0.3266,
+      "latency_s": 0.596,
+      "prompt_tokens": 1388,
+      "cached_prefix_tokens": 0,
+      "output_tokens": 32,
+      "gpu_memory_used_mib": 3831
+    },
+    {
+      "question": "What is PagedAttention?",
+      "ttft_s": 0.0227,
+      "latency_s": 0.289,
+      "prompt_tokens": 1389,
+      "cached_prefix_tokens": 1385,
+      "output_tokens": 32,
+      "gpu_memory_used_mib": 3831
+    },
+    {
+      "question": "What is RadixAttention?",
+      "ttft_s": 0.0432,
+      "latency_s": 0.273,
+      "prompt_tokens": 1389,
+      "cached_prefix_tokens": 1385,
+      "output_tokens": 32,
+      "gpu_memory_used_mib": 3831
+    },
+    {
+      "question": "What is KV-cache fragmentation?",
+      "ttft_s": 0.0201,
+      "latency_s": 0.235,
+      "prompt_tokens": 1389,
+      "cached_prefix_tokens": 1385,
+      "output_tokens": 32,
+      "gpu_memory_used_mib": 3831
+    }
+  ]
+}
